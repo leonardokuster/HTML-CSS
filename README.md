@@ -1,2 +1,2 @@
 # HTML-CSS
- Exercícios realizando durante o estudo de HTML e CSS
+ Exercícios realizados durante o estudo de HTML e CSS
