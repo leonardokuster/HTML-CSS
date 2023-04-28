@@ -12,6 +12,12 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
 }
 
 .cabecalho {
@@ -23,8 +29,8 @@
 .titulo-cabecalho {
     font-family: var(--fonte02);
     padding-top: 50px;
+    font-variant: small-caps;
     font-size: 10vw;
-    font-size: 400;
 }
 
 .paragrafo-cabecalho {
@@ -33,50 +39,53 @@
     font-size: 16px;
 }
 
-.principal {
-
-}
-
-.sessao {
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 3vw;
+    line-height: 2em;
     font-family: var(--fonte03);
     text-align: start;
-    color: black;
-    padding: 61px 0px 61px 30px;
-    font-size: 3.5vw;
 }
 
-#s01 {
+.sessao-normal {
     background-color: white;
 }
 
-#s02 {
-    background-color: black;
+.sessao-imagem {
+    background-color: rgb(65, 64, 64);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.432);
+}
+
+.paragrafo-normal {
+    padding-bottom: 1.5em;
+}
+
+.paragrafo-imagem {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.432);
+    text-shadow: 1px 1px 0px black;
+}
+
+#sessao02 {
     background-image: url(imagens/joaninha.jpg);
+    background-position: right center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-#s03 {
-    background-color: white;
-}
 
-#s04 {
-    background-color: black;
-    color: white;
+#sessao04 {
     background-image: url(imagens/folhas.jpg);
+    background-position: right center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
-#s05 {
-    background-color: white;
-}
-
-
-
 
 
 footer {
@@ -92,6 +101,7 @@ footer {
 
 .link {
     color: white;
+    font-weight: bolder;
 }
 
 .link:hover {
