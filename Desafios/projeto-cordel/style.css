@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha', cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.cabecalho {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.titulo-cabecalho {
+    font-family: var(--fonte02);
+    padding-top: 50px;
+    font-size: 10vw;
+    font-size: 400;
+}
+
+.paragrafo-cabecalho {
+    font-family: var(--fonte01);
+    padding-bottom: 50px;
+    font-size: 16px;
+}
+
+.principal {
+
+}
+
+.sessao {
+    font-family: var(--fonte03);
+    text-align: start;
+    color: black;
+    padding: 61px 0px 61px 30px;
+    font-size: 3.5vw;
+}
+
+#s01 {
+    background-color: white;
+}
+
+#s02 {
+    background-color: black;
+    color: white;
+    background-image: url(imagens/joaninha.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#s03 {
+    background-color: white;
+}
+
+#s04 {
+    background-color: black;
+    color: white;
+    background-image: url(imagens/folhas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#s05 {
+    background-color: white;
+}
+
+
+
+
+
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.paragrafo-rodape {
+    font-family: var(--fonte01);
+}
+
+.link {
+    color: white;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
