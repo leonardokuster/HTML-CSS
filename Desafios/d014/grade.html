@@ -41,6 +41,27 @@
             
         }
 
+        .div-nota {
+            display: flex;
+            border-top: 1px solid black;
+        }
+
+        #n1 {
+            border-right: 1px solid black;
+            margin: 0px;
+            padding: 5px 5px 0px 5px;
+        }
+
+        #n2 {
+            padding: 5px 0px 0px 5px;
+            margin: 0px;
+        }
+
+        .nota-cabecalho {
+            padding: 10px 0px 0px 0px;
+            margin: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -55,11 +76,16 @@
             <caption>Notas da Faculdade</caption>
             <thead>
                 <tr>
-                    <th scope="col">Área</th>
-                    <th scope="col">Disciplinas</th>
-                    <th scope="colgroup" colspan="2">Notas
+                    <th scope="col" class="cabecalho">Área</th>
+                    <th scope="col" class="cabecalho">Disciplinas</th>
+                    <th scope="colgroup" colspan="2" class="nota-cabecalho">
+                        Notas
+                        <div class="div-nota">
+                            <p id="n1">Nota 1</p>
+                            <p id="n2">Nota 2</p>
+                        </div>
                     </th>
-                    <th scope="col">Média</th>
+                    <th scope="col" class="cabecalho">Média</th>
                 </tr>
             </thead>
             <tbody>
