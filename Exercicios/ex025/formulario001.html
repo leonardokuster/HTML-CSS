@@ -13,7 +13,8 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <!--Método post é pra não mostrar os dados na URL, mas ainda é possível acessá-los de outra forma, inspecionando a página, então tem que tomar cuidado-->
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome: </label>
