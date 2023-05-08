@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Canal Tecnológico</h1>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Mais Lidas</a></li>
+                <li><a href="">Tutoriais</a></li>
+                <li><a href="">Entretenimento</a></li>
+                <li><a href="">Ciência</a></li>
+                <li><a href="">Segurança</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Inteligência Artificial, um dilema do nosso tempo</h2>
+            <p>A Inteligência Artificial (IA) é um dos campos da tecnologia que tem crescido exponencialmente nos últimos anos. Sua capacidade de processar grandes volumes de dados em uma velocidade surpreendente tem transformado muitas áreas da nossa vida, desde a medicina até os serviços bancários. No entanto, a crescente adoção da inteligência artificial tem gerado preocupações sobre seus possíveis impactos negativos.</p>
+            <p>Os benefícios da IA são inúmeros, como o aumento da eficiência em processos industriais, a melhoria da precisão em diagnósticos médicos, a personalização de conteúdos em plataformas de entretenimento e a criação de novos produtos e serviços. Além disso, ela tem sido utilizada para solucionar problemas complexos que seriam impossíveis de serem resolvidos pelos seres humanos.</p>
+            <p>No entanto, o uso massivo da inteligência artificial também traz riscos. Um dos principais dilemas é a questão da privacidade. A coleta e o uso de dados pessoais para treinar modelos têm sido um tema de grande preocupação. Além disso, há o risco de que essa tecnologia seja utilizada de forma discriminatória, baseada em preconceitos existentes na sociedade, o que pode agravar as desigualdades e injustiças.</p>
+            <p>Outra questão é a substituição de empregos por máquinas inteligentes. Embora a inteligência artificial crie novas oportunidades de emprego, muitos postos de trabalho podem ser extintos, especialmente aqueles que envolvem tarefas repetitivas e rotineiras.</p>
+            <p>Diante desses dilemas, é importante que a adoção seja feita de forma ética e responsável. As empresas devem garantir a proteção da privacidade dos usuários e evitar a utilização de modelos discriminatórios. Além disso, é necessário que sejam criados programas de requalificação profissional para as pessoas que perderem seus empregos em decorrência da automatização.</p>
+            <p>A tecnologia é uma ferramenta poderosa, capaz de transformar o mundo para melhor. No entanto, para que isso aconteça, é preciso que seu uso seja feito com responsabilidade. A Inteligência Artificial tem potencial para trazer grandes benefícios para a humanidade, mas é preciso que ela seja utilizada de forma consciente e com um olhar crítico sobre seus possíveis impactos negativos.</p>
+            <aside>
+                <p>Por <a href="https://canaltech.com.br/equipe/luiz-othero/" target="_blank">Luiz Othero</a> | 04 de Maio de 2023 às 10h00</p>
+            </aside>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -2,6 +2,71 @@
 
 /* Todas as demais mídias */
 
-@media print {
+/* Typical Device Break Points:
+
+    Pequenas telas: até 600px -> Posso ignorar porque já fiz o mobile first
+    Celular: 600 - 768px -> Posso ignorar porque já fiz o mobile first
+    Tablets: 768 - 992px
+    Desktop: 992 - 1200px
+    TV: acima de 1200px 
+
+*/
+
+@media print { /* Impressão */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
     
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feito através do site do Leonardo Kuster';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    body {
+        background-image: url(/Exercicios/ex026/imagens/back-tablet.jpg);
+    }
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Desktop */
+    body {
+        background-image: url(/Exercicios/ex026/imagens/back-pc.jpg);
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* Telas Grandes */
+    body {
+        background-image: url(/Exercicios/ex026/imagens/back-tv.jpg);
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
 }
